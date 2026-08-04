@@ -1,0 +1,18 @@
+<svg width="1200" height="80" viewBox="0 0 1200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="waveFill" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#58A6FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="80" fill="#0D1117"/>
+  <path d="M0 40 Q 150 10 300 40 T 600 40 T 900 40 T 1200 40" stroke="url(#waveFill)" stroke-width="2" fill="none">
+    <animate attributeName="d"
+      values="M0 40 Q 150 10 300 40 T 600 40 T 900 40 T 1200 40;
+              M0 40 Q 150 70 300 40 T 600 40 T 900 40 T 1200 40;
+              M0 40 Q 150 10 300 40 T 600 40 T 900 40 T 1200 40"
+      dur="6s" repeatCount="indefinite"/>
+  </path>
+  <path d="M0 55 Q 150 30 300 55 T 600 55 T 900 55 T 1200 55" stroke="#30363D" stroke-width="1" fill="none" opacity="0.6"/>
+</svg>

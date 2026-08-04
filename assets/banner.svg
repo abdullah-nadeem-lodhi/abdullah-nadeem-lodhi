@@ -1,0 +1,88 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#111823"/>
+    </linearGradient>
+
+    <!-- Accent glow gradient -->
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="strokeFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#58A6FF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Glass panel gradient -->
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.015"/>
+    </linearGradient>
+
+    <clipPath id="roundedPanel">
+      <rect x="60" y="48" width="1080" height="204" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- Ambient glow blobs -->
+  <circle cx="150" cy="60" r="220" fill="url(#glow)">
+    <animate attributeName="cx" values="150;220;150" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1080" cy="260" r="240" fill="url(#glow)">
+    <animate attributeName="cx" values="1080;1000;1080" dur="11s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Glass panel -->
+  <g clip-path="url(#roundedPanel)">
+    <rect x="60" y="48" width="1080" height="204" fill="url(#glass)"/>
+  </g>
+  <rect x="60" y="48" width="1080" height="204" rx="20" stroke="#30363D" stroke-width="1.5"/>
+
+  <!-- Top accent line -->
+  <rect x="60" y="48" width="1080" height="2" fill="url(#strokeFade)" opacity="0.8"/>
+
+  <!-- Dot grid decoration -->
+  <g fill="#58A6FF" opacity="0.35">
+    <circle cx="1090" cy="80" r="2"/>
+    <circle cx="1105" cy="80" r="2"/>
+    <circle cx="1120" cy="80" r="2"/>
+    <circle cx="1090" cy="95" r="2"/>
+    <circle cx="1105" cy="95" r="2"/>
+    <circle cx="1120" cy="95" r="2"/>
+  </g>
+
+  <!-- Name -->
+  <text x="100" y="140" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="700" fill="#E6EDF3" opacity="0">
+    Abdullah Nadeem Lodhi
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.1s" fill="freeze"/>
+  </text>
+
+  <!-- Accent underline -->
+  <rect x="102" y="152" width="0" height="4" rx="2" fill="#58A6FF">
+    <animate attributeName="width" from="0" to="230" dur="1s" begin="0.5s" fill="freeze"/>
+  </rect>
+
+  <!-- Role / tagline -->
+  <text x="100" y="192" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#8B949E" opacity="0">
+    Full-Stack Web Developer &#183; MERN Stack Specialist &#183; SE Student
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0.7s" fill="freeze"/>
+  </text>
+
+  <!-- Sub note -->
+  <text x="100" y="222" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" fill="#58A6FF" opacity="0">
+    Building clean, functional products &#8212; one commit at a time
+    <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1s" fill="freeze"/>
+  </text>
+
+  <!-- Corner bracket accents -->
+  <path d="M60 68 V48 H80" stroke="#58A6FF" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M1140 232 V252 H1120" stroke="#58A6FF" stroke-width="2" fill="none" opacity="0.7"/>
+</svg>
